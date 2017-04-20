@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.work1.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/worktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="51dp"
+            android:layout_toStartOf="@+id/textsign"
+            android:text="shop name" />
+
+        <EditText
+            android:id="@+id/edid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edpassword"
+            android:layout_alignStart="@+id/edpassword"
+            android:layout_marginBottom="17dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:text="log in"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <TextView
+            android:id="@+id/textpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edpassword"
+            android:layout_alignBottom="@+id/edpassword"
+            android:layout_alignStart="@+id/textid"
+            android:text="password : "
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <EditText
+            android:id="@+id/edpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/busign"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="53dp"
+            android:layout_marginEnd="56dp"
+
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="212dp" />
+
+        <TextView
+            android:id="@+id/textid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edid"
+            android:layout_alignBottom="@+id/edid"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/edid"
+            android:text="ID :"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="148dp" />
+
+        <Button
+            android:id="@+id/busign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textsign"
+            android:layout_marginBottom="111dp"
+            android:onClick="clickOK"
+            android:text="登入"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="306dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
